@@ -1,34 +1,111 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nostra Headless Shop
 
-## Getting Started
+Headless Shop is an e-commerce web application built with Next.js 13, TypeScript, Tailwind CSS, and Shadcn-UI. It leverages a Shopify Storefront as the backend, with Prisma and PostgreSQL for data storage. Data fetching is handled using Apollo Client, and state management is achieved with Redux Toolkit.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [Demo](#demo)
+- [Design](#design)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Check out the live site at [Headless Shop](https://nostra-three.vercel.app/).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Design
 
-## Learn More
+Here are some design previews of the Headless Shop web application:
 
-To learn more about Next.js, take a look at the following resources:
+### Home Page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Home Page](design/home.webp)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Shop Page (All Products)
 
-## Deploy on Vercel
+![Shop Page](design/shop.webp)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Product Detail Page
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Product Detail Page](design/product.webp)
+
+### Cart Page
+
+![Cart Page](design/cart.webp)
+
+## Features
+
+- **Shopfront Integration**: Headless Shop integrates with a Shopify Storefront, providing a seamless e-commerce experience.
+- **Data Fetching**: Apollo Client is used for efficient and flexible data fetching from the backend.
+- **State Management**: Redux Toolkit is employed for centralized state management, ensuring a smooth user experience.
+- **Responsive Design**: The application is designed to be responsive and user-friendly on various devices.
+- **Customizable Styles**: Tailwind CSS and Shadcn-UI are used for easily customizable and beautiful UI components.
+- **Database Storage**: Prisma and PostgreSQL are used to store and manage application data efficiently.
+
+## Technologies
+
+- Next.js 13
+- TypeScript
+- Tailwind CSS
+- Shadcn-UI
+- Apollo Client
+- Redux Toolkit
+- Shopify Storefront
+- Prisma
+- PostgreSQL
+
+## Setup
+
+1. Clone the repository:
+
+   ```shell
+   git clone https://github.com/madeelchaudhary/headless-shop.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```shell
+   cd headless-shop
+   ```
+
+3. Install the dependencies:
+
+   ```shell
+    npm install
+   ```
+
+4. Configure your environment variables, including your Shopify Storefront credentials and database connection details.
+
+5. Run the database migrations:
+
+   ```shell
+   npx prisma migrate dev --name init
+   ```
+
+6. Run the development server:
+
+   ```shell
+   npm run dev
+   ```
+
+7. Navigate to [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
+## Usage
+
+1. Browse the products on the home page.
+2. Navigate to the shop page to view all available products.
+3. Click on a product to see its details on the product detail page.
+4. Add items to your cart and proceed to the cart page to review and place your order.
+5. Enjoy shopping!
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+[MIT](LICENSE)
